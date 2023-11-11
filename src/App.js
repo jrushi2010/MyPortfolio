@@ -11,22 +11,13 @@ import Specialization from './Components/Specialization/Specialization';
 function App() {
   return (
     <div>
-      <div className='px-5 md:px-0'>
-        <Home />
-        <About />
-      </div>
-      <div className='px-0'>
-        <Skill />
-        <Design />
-        <Specialization />
-      </div>
-      <div className='px-5 md:px-0'>
-        <Work />
-        <Contact />
-      </div>
-      <div className='px-0'>
-        <Footer />
-      </div>
+      <Home />
+      <About />
+      <Skill />
+      <Design />
+      <Work />
+      <Contact />
+      <Footer />
     </div>
   );
 }

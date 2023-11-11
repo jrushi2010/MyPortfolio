@@ -16,11 +16,11 @@ const Header = () => {
   return (
     <div className='flex justify-center items-center py-4'>
       <div className='hidden lg:flex justify-center items-center gap-16'>
-        <a className='w-20 text-center'>Home</a>
-        <a className='w-20 text-center'>About me</a>
+        <a className='w-20 text-center cursor-pointer hover:text-[#7880FE]'>Home</a>
+        <a className='w-20 text-center cursor-pointer hover:text-[#7880FE]'>About me</a>
         <img className='' src={logo} alt='logo' />
-        <a className='w-20 text-center'>Work</a>
-        <a className='w-20 text-center'>Contact</a>
+        <a className='w-20 text-center cursor-pointer hover:text-[#7880FE]'>Work</a>
+        <a className='w-20 text-center cursor-pointer hover:text-[#7880FE]'>Contact</a>
       </div>
 
       <div onClick={handleMenu} className='absolute z-10 cursor-pointer'>

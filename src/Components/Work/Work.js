@@ -7,7 +7,7 @@ import './Work.css';
 
 const Work = () => {
   return (
-    <div className='relative mt-[24rem] mb-40 lg:mt-0 lg:top-[100rem]' >
+    <div className='relative mt-[30rem] mb-40 md:mt-[35rem] lg:mt-0 lg:top-[80rem]' >
       <div className='h-screen flex md:flex-none justify-center items-center'>
         <img className='hidden absolute lg:block background-gradient' src={eclipse} alt='background' />
         <img className='hidden absolute lg:block bgImage' src={background2} alt='background' />

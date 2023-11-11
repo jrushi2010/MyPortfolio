@@ -8,15 +8,15 @@ import './about.css';
 const About = () => {
   return (
     <div className='container relative'>
-      <div className='mt-96 md:mt-[35rem] lg:mt-80'>
+      <div className='mt-0 lg:mt-80'>
         <div className='relative col-span-12 md:py-20 lg:py-0 flex-none md:flex-none lg:flex px-8 items-center justify-center'>
           <div className='absolute'><img className='bgImage' src={light} alt='' /></div>
-          <img className='absolute max-w-xs left-0 bottom-96 md:max-w-2xl md:left-10 lg:max-w-4xl lg:left-0 lg:bottom-20 bgImage' src={lines} alt='lines' />
-          <img className='z-50' src={photo} alt='me' />
+          <img className='absolute max-w-xs mx-auto lg:mx-0 left-0 right-0 bottom-96 md:max-w-2xl md:left-10 lg:max-w-4xl lg:left-0 lg:bottom-20 bgImage' src={lines} alt='lines' />
+          <img className='relative z-40 mx-auto left-0 right-0' src={photo} alt='me' />
           <div className='py-8 z-50 text-center md:text-center lg:text-left'>
             <h3 className='py-4 font-bold text-xl text-[#3DDCFF]'>About me</h3>
             <p>
-              My name is <span className='text-[#00FFF0]'>Shreyas Kulkarni.</span> I'm a <span className='text-[#00FFF0]'>UX/UI Designer</span> and a instrutor based in <span className='text-[#00FFF0]'>Pune.</span> I'm currently working with <span className='text-[#00FFF0]'>InDeft technologies Pvt. Ltd.</span> I think Design lies in between Human & Product, And being an emotional person I love connecting with people emotionally, You got lot of their views & questions too..Thats why I Choose the Design
+              Hi, I am <span className='text-[#00FFF0]'>Full Stack Developer</span> from India. I enjoy building web applications. I am specialized in frontend development and also have interest in backend development. I have<span className='text-[#00FFF0]'> 1 Year 6 months </span>of experience as a Full Stack Developer. Till now I have developed, maintained and scaled frontend applications. I learn new things on web and build side projects in my spare time.
             </p>
           </div>
         </div>
