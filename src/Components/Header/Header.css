@@ -1,0 +1,7 @@
+.topmenu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 332px 0px 332px;
+}

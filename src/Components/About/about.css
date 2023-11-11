@@ -1,0 +1,12 @@
+.bgImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    mix-blend-mode: overlay;
+  }
+  
+  
+  .background-gradient{
+    z-index: 1;
+    background: radial-gradient(46.25% 45.19% at 50% 50%, #4652C0 0%, #080B3A 100%);
+  }
