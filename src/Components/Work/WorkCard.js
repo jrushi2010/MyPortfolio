@@ -1,53 +1,80 @@
 import React from 'react'
-import design1 from '../../assets/1.png';
-import design2 from '../../assets/2.png';
-import design3 from '../../assets/3.png';
-import d2 from '../../assets/3d 2.png';
-import d3 from '../../assets/Comp 38 2.png';
+import swiggy from '../../assets/work/Group 3483.png';
+import youtube from '../../assets/work/Group 3486.png';
+import netflix from '../../assets/work/Group 3482.png';
+import './Work.css'
 
 const WorkCard = () => {
+
+    const projects = [
+        {
+            id: 1,
+            name: "Food Ordering App",
+            description: ['Real time data fetching from Swiggy API.',
+                'The Shimmer effect indicates when the data is being loaded.',
+                'Lazy loading or code Splitting for enhancing application performance.',
+                'State management using React Redux.',
+                'Tailwind css for beautigull UI.'],
+            github: "https://github.com/jrushi2010/NamasteReact",
+            link: "https://cloneswiggy.netlify.app/",
+            technologies: ['ReactJs', 'Redux', 'Jest'],
+            image: swiggy,
+        },
+        {
+            id: 2,
+            name: "Netflix GPT Clone",
+            description: ["Authentication: Firebase was employed for user authentication, enhancing the app's security and user experience.",
+                "State Management: I harnessed the capabilities of Redux Toolkit (RTK) to manage and maintain the data layer within the application efficiently.",
+                "Routing: For seamless navigation, I incorporated react-router-dom for routing purposes.",
+                " Data Integration: The app seamlessly integrates with the TMDB API to fetch and display movie data.",
+                "Clean Code Practices: To ensure maintainability, I utilized React hooks and created custom hooks, contributing to cleaner and more organized code.",
+                "Component Reusability: I designed and built reusable components to enhance code efficiency and promote scalability.",
+                " Multi-Language Support: The app features multi-language support, making it accessible to a wider audience.",
+                "GPT Search: Leveraging the power of OpenAI APIs, I implemented a natural language search feature using GPT, allowing users to search for movies in a more conversational manner."],
+            github: "https://github.com/jrushi2010/NetflixGPT",
+            link: "https://gpt-netflix-23.netlify.app/",
+            technologies: ['ReactJs', 'Redux', 'Google Firebase', 'Jest'],
+            image: netflix,
+        },
+        {
+            id: 3,
+            name: "Youtube Clone",
+            description: ["Dynamic Content: It offers a vast array of videos, enabling users to enjoy a similar experience to the original YouTube platform.",
+                "Seamless Navigation: Powered by React Router DOM, users can effortlessly browse through different pages, explore trending videos, and discover new content.",
+                "YouTube APIs Integration: By integrating YouTube APIs, It allows users to search for videos, view detailed video information.",
+                "Search Results Caching: My-YouTube intelligently caches search results to enhance performance and minimize API calls, providing lightning-fast search responses",
+                "Live Chat:Introduced real-time chat for instant video discussions."],
+            github: "https://github.com/jrushi2010/YoutubeClone",
+            link: "https://mytube-clone23.netlify.app/",
+            technologies: ['ReactJs', 'Redux', 'Youtube API'],
+            image: youtube,
+        },
+    ]
+
     return (
-        <div className='flex-none md:flex'>
-            <div className='grid grid-cols-12 gap-8'>
-                <div className='col-span-12 flex-none lg:col-span-4 lg:flex lg:justify-center lg:items-center'>
-                    <div className="relative max-w-xs md:max-w-lg mx-auto lg:absolute lg:z-10 lg:left-40 lg:max-w-sm">
-                        <div className="px-11 pt-3 pb-16 bg-white border-none bg-opacity-40 rounded-t-3xl border-2 backdrop-blur-lg justify-center items-center">
-                            <div className="grow shrink basis-0 flex justify-center items-center pt-2 pb-2">
-                                <img className="py-4 shadow" src={d2} alt='designs' />
-                            </div>
+        <div className=''>
+            <p className='font-bold text-3xl text-[#3DDCFF]'>My Recent Work</p>
+            {projects.map((project) => (
+                <div key={project.id} className='relative grid grid-cols-12 py-20 md:py-20 lg:py-20'>
+                    <div className='lg:col-span-2'>
+                    </div>
+                    <div className='col-span-12 mx-5 px-5 lg:mx-0 lg:col-span-8 lg:px-20 py-4 text-left new-gradient'>
+                        <p className='text-[#30FFFF] text-2xl font-bold py-6'>{project.name}</p>
+                        <div className='lg:w-2/3'>
+                            <h4 className='addlinebreak'>✅ {project.description.join('\n✅')}</h4>
                         </div>
-                        <div className="w-full py-3.5 left-0 top-[270px] bg-gray-400 bg-opacity-30 rounded-bl-3xl rounded-br-3xl border-none border-opacity-30 justify-center items-center inline-flex">
-                            <div className="text-white text-2xl font-bold font-['Poppins'] leading-loose">Designs</div>
+                        <div>
+                            <p className='text-[#30FFFF] py-4 font-bold'>Technologies: {project.technologies.join(', ')}</p>
+                        </div>
+                        <div className='relative lg:absolute flex justify-center items-center top-24 lg:right-0 lg:left-auto lg:-bottom-20 lg:top-auto'>
+                            <img className='max-w-xs' src={project.image} alt='' />
                         </div>
                     </div>
-                </div>
-                <div className='col-span-12 lg:col-span-4'>
-                    <div className="lg:relative lg:z-50 md:max-w-lg max-w-xs mx-auto">
-                        <div className="px-11 pt-3 pb-16 bg-cyan-200 border-none bg-opacity-40 rounded-t-3xl border-2 backdrop-blur-lg justify-center items-center">
-                            <div className="grow shrink basis-0 flex justify-center items-center">
-                                <img className="w-2/6 md:w-32 lg:w-24 py-4 shadow" src={design1} alt='ui design1' />
-                                <img className="w-2/6 md:w-40 lg:w-40 md:px-4 shadow" src={design2} alt='ui design2' />
-                                <img className="w-2/6 md:w-32 lg:w-24 py-4 shadow" src={design3} alt='ui design3' />
-                            </div>
-                        </div>
-                        <div className="w-full py-3.5 left-0 top-[270px] bg-green-200 bg-opacity-30 rounded-bl-3xl rounded-br-3xl border-none border-opacity-30 justify-center items-center inline-flex">
-                            <div className="text-white text-2xl font-bold font-['Poppins'] leading-loose">UI Designs</div>
-                        </div>
+                    <div className='lg:col-span-2'>
                     </div>
                 </div>
-                <div className='col-span-12 lg:col-span-4 flex-none md:flex justify-center items-center'>
-                    <div className="relative max-w-xs mx-auto md:max-w-lg lg:absolute lg:right-40 lg:z-10 lg:max-w-sm">
-                        <div className="px-11 pt-3 pb-16 bg-white border-none bg-opacity-40 rounded-t-3xl border-2 backdrop-blur-lg justify-center items-center">
-                            <div className="grow shrink basis-0 flex justify-center items-center">
-                                <img className="px-0 md:px-6 lg:px-0 py-4 shadow" src={d3} alt='mockups' />
-                            </div>
-                        </div>
-                        <div className="w-full py-3.5 left-0 top-[270px] bg-gray-400 bg-opacity-30 rounded-bl-3xl rounded-br-3xl border-none border-opacity-30 justify-center items-center inline-flex">
-                            <div className="text-white text-2xl font-bold font-['Poppins'] leading-loose">Mockups</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ))}
+
         </div>
     )
 }

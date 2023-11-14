@@ -10,7 +10,7 @@ import Specialization from './Components/Specialization/Specialization';
 
 function App() {
   return (
-    <div>
+    <div className='scroll-smooth'>
       <Home />
       <About />
       <Skill />

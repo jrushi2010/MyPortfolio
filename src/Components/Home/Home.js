@@ -7,7 +7,7 @@ import resume from '../../assets/Rushikesh_Jere_ResumeR.pdf';
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="relative" id="home">
       <div className="absolute -left-10 md:left-0 -z-10">
         <img className="w-32 lg:w-full" src={topImage} alt="top" />
       </div>
@@ -29,7 +29,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="lg:absolute pt-20 lg:right-0 top-96 lg:top-[28rem]">
+      <div className="lg:absolute lg:right-0 top-96 lg:top-[28rem]">
         <img src={bottomImage} alt="bottom" />
       </div>
 

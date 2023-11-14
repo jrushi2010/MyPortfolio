@@ -1,17 +1,13 @@
-.bgImage {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  mix-blend-mode: overlay;
-  z-index: 2;
+.new-gradient{
+  border-radius: 20px;
+  background: linear-gradient(111deg, #2E3060 1.96%, #3F518D 35.33%, #7A7BAA 96.18%);  background-blend-mode: luminosity;
+  /* Blur */
+  backdrop-filter: blur(50px);
 }
 
-
-.background-gradient{
-  width: 100%;
-  z-index: 1;
-  height: 100%;
-  background: radial-gradient(46.25% 45.19% at 50% 50%, #4652C0 0%, #080B3A 100%);
+.addlinebreak {
+  white-space: pre-line;
+  /* line-height: 40px; */
 }
 
 /* .bgImage {

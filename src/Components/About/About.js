@@ -7,11 +7,11 @@ import './about.css';
 
 const About = () => {
   return (
-    <div className='container relative'>
+    <div className='container relative' id='about' >
       <div className='mt-0 lg:mt-80'>
         <div className='relative col-span-12 md:py-20 lg:py-0 flex-none md:flex-none lg:flex px-8 items-center justify-center'>
           <div className='absolute'><img className='bgImage' src={light} alt='' /></div>
-          <img className='absolute max-w-xs mx-auto lg:mx-0 left-0 right-0 bottom-96 md:max-w-2xl md:left-10 lg:max-w-4xl lg:left-0 lg:bottom-20 bgImage' src={lines} alt='lines' />
+          <img className='absolute max-w-xs mx-auto left-0 right-0 bottom-96 md:max-w-2xl md:left-10 lg:mx-0 lg:max-w-4xl lg:left-0 lg:bottom-20 bgImage' src={lines} alt='lines' />
           <img className='relative z-40 mx-auto left-0 right-0' src={photo} alt='me' />
           <div className='py-8 z-50 text-center md:text-center lg:text-left'>
             <h3 className='py-4 font-bold text-xl text-[#3DDCFF]'>About me</h3>

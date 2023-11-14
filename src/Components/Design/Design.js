@@ -4,7 +4,7 @@ import design from '../../assets/Ilustration design tools.png'
 const Design = () => {
     return (
         <div className='relative grid grid-cols-12'>
-            <div className='relative mx-auto col-span-12 px-4 top-60 lg:absolute lg:col-span-6 z-10 lg:mt-[26rem] lg:top-80 lg:left-60'>
+            <div className='mx-auto col-span-12 px-4 mt-60 lg:absolute lg:col-span-6 z-10 lg:mt-[26rem] lg:top-80 lg:left-60'>
                 <p className='text-2xl text-center font-bold text-[#00FFF0] py-8'>Devlopment Tools</p>
                 <div className='grid grid-cols-12'>
                     <div className='md:mx-auto col-span-6 mx-auto'>
