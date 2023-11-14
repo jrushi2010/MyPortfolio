@@ -2,6 +2,7 @@ import React from 'react'
 import swiggy from '../../assets/work/Group 3483.png';
 import youtube from '../../assets/work/Group 3486.png';
 import netflix from '../../assets/work/Group 3482.png';
+import github from '../../assets/footer/github-mark-white.png';
 import './Work.css'
 
 const WorkCard = () => {
@@ -65,6 +66,10 @@ const WorkCard = () => {
                         </div>
                         <div>
                             <p className='text-[#30FFFF] py-4 font-bold'>Technologies: {project.technologies.join(', ')}</p>
+                        </div>
+                        <div className='flex flex-wrap items-center'>
+                            <a target='_blank' href={project.github}><img className='w-10' src={github} alt='github' /></a>
+                            <a target='_blank' href={project.link} className='mx-4 py-2 w-20 font-medium text-lg text-center cursor-pointer bg-gradient-to-r from-fuchsia-500 to-blue-800 shadow border border-none rounded-2xl'>View</a>
                         </div>
                         <div className='relative lg:absolute flex justify-center items-center top-24 lg:right-0 lg:left-auto lg:-bottom-20 lg:top-auto'>
                             <img className='max-w-xs' src={project.image} alt='' />

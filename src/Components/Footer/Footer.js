@@ -9,6 +9,7 @@ import twitter from '../../assets/footer/social media/Twitter.png';
 import linkedin from '../../assets/footer/social media/Linkedin.png';
 import youtube from '../../assets/footer/social media/YouTube.png';
 import github from '../../assets/footer/github-mark-white.png';
+import whatsapp from '../../assets/footer/social media/whatsapp.png';
 import footerimg from '../../assets/6.png';
 import './Footer.css';
 
@@ -44,7 +45,8 @@ const Footer = () => {
         <div className=' py-4 lg:py-20 flex justify-center items-center'>
           <a target='_blank' href='https://www.instagram.com/rj_rushikeshjere/?hl=en'><img className='px-2' src={instagram} alt='instagram' /></a>
           <a target='_blank' href='https://www.linkedin.com/in/rushikesh-jere-0170961b6/'><img className='px-2' src={linkedin} alt='linkedin' /></a>
-          <a target='_blank' href='https://github.com/jrushi2010'><img className='px-2 w-14' src={github} alt='github' /></a>
+          <a target='_blank' href='https://github.com/jrushi2010'><img className='mx-1 px-2 w-14' src={github} alt='github' /></a>
+          <a target='_blank' href=' https://wa.me/9881007962'><img className='px-2 w-14' src={whatsapp} alt='whatsapp' /></a>
         </div>
         <div className='flex justify-center items-center'>
           <hr className='h-0.5 w-2/3 lg:w-[1360px] bg-white bg-opacity-20'></hr><br></br>
